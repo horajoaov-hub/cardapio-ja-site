@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pizzaria Doche&#x27;s · Cardápio</title>
+<meta name="description" content="Cardápio digital de Pizzaria Doche&#x27;s. Peça pelo WhatsApp.">
+<meta name="theme-color" content="#b3261e">
+<style>
+:root{--cor:#b3261e;--fundo:#f6f5f2;--card:#fff;--texto:#1d1d1f;--suave:#6b6b70}
+*{box-sizing:border-box}body{margin:0;font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--fundo);color:var(--texto);padding-bottom:90px}
+header{background:var(--cor);color:#fff;padding:22px 16px 18px;text-align:center}
+header h1{margin:6px 0 4px;font-size:1.6rem}header p{margin:0;opacity:.9;font-size:.9rem}
+.logo{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid #fff}
+.insta{color:#fff;font-size:.9rem}
+.previa{background:#fff3cd;color:#5c4400;padding:10px 16px;font-size:.88rem;text-align:center}
+nav{position:sticky;top:0;z-index:5;background:var(--card);display:flex;gap:6px;overflow-x:auto;padding:10px 12px;box-shadow:0 1px 4px #0001}
+nav a{flex:none;padding:7px 14px;border-radius:20px;background:var(--fundo);color:var(--texto);text-decoration:none;font-size:.9rem}
+.busca{margin:12px 16px 0;width:calc(100% - 32px);padding:11px 14px;border:1px solid #ddd;border-radius:12px;font-size:1rem}
+main{max-width:720px;margin:0 auto;padding:0 16px}
+h2{margin:22px 0 10px;font-size:1.15rem}
+.item{display:flex;gap:12px;background:var(--card);border-radius:14px;padding:12px;margin-bottom:10px;box-shadow:0 1px 3px #0000000d}
+.item img{width:86px;height:86px;border-radius:10px;object-fit:cover;flex:none}
+.info{flex:1;min-width:0}.item h3{margin:0 0 3px;font-size:1rem}
+.desc{margin:0 0 8px;color:var(--suave);font-size:.88rem}
+.botoes{display:flex;flex-wrap:wrap;gap:6px}
+.add{border:1px solid var(--cor);color:var(--cor);background:#fff;border-radius:10px;padding:6px 10px;font-size:.9rem;cursor:pointer}
+.add b{margin-left:4px}.add:active{background:var(--cor);color:#fff}
+.obs{color:var(--suave);font-size:.85rem;text-align:center;margin:20px 0}
+#barra{position:fixed;left:0;right:0;bottom:0;padding:12px 16px;background:var(--card);box-shadow:0 -2px 10px #0002;display:none}
+#barra button{width:100%;padding:14px;border:0;border-radius:12px;background:#25d366;color:#fff;font-size:1.05rem;font-weight:600;cursor:pointer}
+dialog{border:0;border-radius:16px;width:min(94vw,460px);padding:18px}
+dialog h3{margin-top:0}dialog ul{padding:0;list-style:none}dialog li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #eee}
+dialog input,dialog textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:10px;font:inherit}
+.menos{border:0;background:none;color:#b00;font-size:1.1rem;cursor:pointer}
+.acoes{display:flex;gap:8px;margin-top:10px}.acoes button{flex:1;padding:12px;border-radius:10px;border:0;font-size:1rem;cursor:pointer}
+.enviar{background:#25d366;color:#fff;font-weight:600}
+footer{text-align:center;color:var(--suave);font-size:.75rem;padding:24px 0}
+</style></head><body>
+<div class="previa">Prévia feita para <b>Pizzaria Doche&#x27;s</b> · pratos e preços ilustrativos. Faça um pedido de teste: ele chega no WhatsApp de vocês.</div>
+<header><h1>Pizzaria Doche&#x27;s</h1><p>Ter a Dom, 18h às 23h30</p></header>
+<nav><a href="#c0">Pizzas tradicionais</a><a href="#c1">Pizzas especiais</a><a href="#c2">Pizzas doces</a><a href="#c3">Bebidas</a></nav>
+<input class="busca" type="search" placeholder="Buscar no cardápio..." aria-label="Buscar">
+<main><section id="c0"><h2>Pizzas tradicionais</h2><article class="item" data-busca="mussarela molho de tomate, mussarela e orégano"><div class="info"><h3>Mussarela</h3><p class="desc">Molho de tomate, mussarela e orégano</p><div class="botoes"><button class="add" data-id="0-0-0" data-nome="Mussarela (Média)" data-preco="39.9">Média · R$ 39,90 <b>+</b></button><button class="add" data-id="0-0-1" data-nome="Mussarela (Grande)" data-preco="49.9">Grande · R$ 49,90 <b>+</b></button></div></div></article><article class="item" data-busca="calabresa calabresa fatiada, cebola e azeitona"><div class="info"><h3>Calabresa</h3><p class="desc">Calabresa fatiada, cebola e azeitona</p><div class="botoes"><button class="add" data-id="0-1-0" data-nome="Calabresa (Média)" data-preco="42.9">Média · R$ 42,90 <b>+</b></button><button class="add" data-id="0-1-1" data-nome="Calabresa (Grande)" data-preco="52.9">Grande · R$ 52,90 <b>+</b></button></div></div></article><article class="item" data-busca="portuguesa presunto, ovo, cebola, ervilha e mussarela"><div class="info"><h3>Portuguesa</h3><p class="desc">Presunto, ovo, cebola, ervilha e mussarela</p><div class="botoes"><button class="add" data-id="0-2-0" data-nome="Portuguesa (Média)" data-preco="45.9">Média · R$ 45,90 <b>+</b></button><button class="add" data-id="0-2-1" data-nome="Portuguesa (Grande)" data-preco="56.9">Grande · R$ 56,90 <b>+</b></button></div></div></article><article class="item" data-busca="frango com catupiry frango desfiado e catupiry original"><div class="info"><h3>Frango com catupiry</h3><p class="desc">Frango desfiado e catupiry original</p><div class="botoes"><button class="add" data-id="0-3-0" data-nome="Frango com catupiry (Média)" data-preco="45.9">Média · R$ 45,90 <b>+</b></button><button class="add" data-id="0-3-1" data-nome="Frango com catupiry (Grande)" data-preco="56.9">Grande · R$ 56,90 <b>+</b></button></div></div></article></section><section id="c1"><h2>Pizzas especiais</h2><article class="item" data-busca="quatro queijos mussarela, provolone, parmesão e gorgonzola"><div class="info"><h3>Quatro queijos</h3><p class="desc">Mussarela, provolone, parmesão e gorgonzola</p><div class="botoes"><button class="add" data-id="1-0-0" data-nome="Quatro queijos (Média)" data-preco="49.9">Média · R$ 49,90 <b>+</b></button><button class="add" data-id="1-0-1" data-nome="Quatro queijos (Grande)" data-preco="61.9">Grande · R$ 61,90 <b>+</b></button></div></div></article><article class="item" data-busca="bacon com cheddar bacon crocante e cheddar cremoso"><div class="info"><h3>Bacon com cheddar</h3><p class="desc">Bacon crocante e cheddar cremoso</p><div class="botoes"><button class="add" data-id="1-1-0" data-nome="Bacon com cheddar (Média)" data-preco="49.9">Média · R$ 49,90 <b>+</b></button><button class="add" data-id="1-1-1" data-nome="Bacon com cheddar (Grande)" data-preco="61.9">Grande · R$ 61,90 <b>+</b></button></div></div></article></section><section id="c2"><h2>Pizzas doces</h2><article class="item" data-busca="chocolate com morango chocolate ao leite e morangos frescos"><div class="info"><h3>Chocolate com morango</h3><p class="desc">Chocolate ao leite e morangos frescos</p><div class="botoes"><button class="add" data-id="2-0-0" data-nome="Chocolate com morango (Broto)" data-preco="29.9">Broto · R$ 29,90 <b>+</b></button><button class="add" data-id="2-0-1" data-nome="Chocolate com morango (Média)" data-preco="44.9">Média · R$ 44,90 <b>+</b></button></div></div></article></section><section id="c3"><h2>Bebidas</h2><article class="item" data-busca="refrigerante 2 l "><div class="info"><h3>Refrigerante 2 L</h3><div class="botoes"><button class="add" data-id="3-0-0" data-nome="Refrigerante 2 L" data-preco="14.0">R$ 14,00 <b>+</b></button></div></div></article><article class="item" data-busca="refrigerante lata "><div class="info"><h3>Refrigerante lata</h3><div class="botoes"><button class="add" data-id="3-1-0" data-nome="Refrigerante lata" data-preco="6.0">R$ 6,00 <b>+</b></button></div></div></article><article class="item" data-busca="suco natural 500 ml "><div class="info"><h3>Suco natural 500 ml</h3><div class="botoes"><button class="add" data-id="3-2-0" data-nome="Suco natural 500 ml" data-preco="9.0">R$ 9,00 <b>+</b></button></div></div></article></section><p class="obs">Pizza meio a meio: cobra-se o valor da mais cara.</p></main>
+<footer>Cardápio digital</footer>
+<div id="barra"><button id="ver">Ver pedido</button></div>
+<dialog id="dlg"><h3>Seu pedido</h3><ul id="lista"></ul><p><b id="total"></b></p>
+<input id="cli" placeholder="Seu nome"><textarea id="end" rows="2" placeholder="Endereço de entrega (ou 'vou retirar')"></textarea>
+<input id="pag" placeholder="Forma de pagamento (Pix, cartão, dinheiro)">
+<div class="acoes"><button id="fechar">Continuar escolhendo</button><button class="enviar" id="enviar">Enviar no WhatsApp</button></div></dialog>
+<script>
+const WHATS=(new URLSearchParams(location.search).get("w")||"").replace(/\D/g,"")||"5561992398564",NOME="Pizzaria Doche's",ENTREGA="a consultar";
+const pedido={};const brl=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const $=s=>document.querySelector(s);
+function render(){const itens=Object.values(pedido);const qtd=itens.reduce((a,i)=>a+i.q,0);
+const tot=itens.reduce((a,i)=>a+i.q*i.p,0);$("#barra").style.display=qtd?"block":"none";
+$("#ver").textContent=`Ver pedido (${qtd}) · ${brl(tot)}`;
+$("#lista").innerHTML=itens.map(i=>`<li><span>${i.q}x ${i.n}</span><span>${brl(i.q*i.p)} <button class="menos" data-id="${i.id}">−</button></span></li>`).join("");
+$("#total").textContent="Total: "+brl(tot)+(ENTREGA?" + entrega ("+ENTREGA+")":"");}
+document.querySelectorAll(".add").forEach(b=>b.onclick=()=>{const id=b.dataset.id;
+pedido[id]=pedido[id]||{id,n:b.dataset.nome,p:+b.dataset.preco,q:0};pedido[id].q++;render();});
+$("#lista").onclick=ev=>{const id=ev.target.dataset.id;if(!id)return;if(--pedido[id].q<=0)delete pedido[id];render();
+if(!Object.keys(pedido).length)$("#dlg").close();};
+$("#ver").onclick=()=>$("#dlg").showModal();$("#fechar").onclick=()=>$("#dlg").close();
+$("#enviar").onclick=()=>{const itens=Object.values(pedido);const tot=itens.reduce((a,i)=>a+i.q*i.p,0);
+let t=`*Pedido - ${NOME}*\n\n`+itens.map(i=>`${i.q}x ${i.n} - ${brl(i.q*i.p)}`).join("\n")+`\n\n*Total: ${brl(tot)}*`;
+if($("#cli").value)t+=`\nNome: ${$("#cli").value}`;if($("#end").value)t+=`\nEntrega: ${$("#end").value}`;
+if($("#pag").value)t+=`\nPagamento: ${$("#pag").value}`;
+window.open(`https://wa.me/${WHATS}?text=${encodeURIComponent(t)}`,"_blank");};
+$(".busca").oninput=ev=>{const q=ev.target.value.toLowerCase().trim();
+document.querySelectorAll(".item").forEach(i=>i.style.display=!q||i.dataset.busca.includes(q)?"":"none");
+document.querySelectorAll("main section").forEach(s=>s.style.display=[...s.querySelectorAll(".item")].some(i=>i.style.display!=="none")?"":"none");};
+</script></body></html>
