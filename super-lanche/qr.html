@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>QR · Super lanche</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>body{margin:0;font-family:system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:10mm;padding:10mm}
+.placa{width:90mm;border:2px solid #d35400;border-radius:6mm;padding:7mm;text-align:center}
+.placa h1{margin:0 0 2mm;font-size:16pt}.placa p{margin:2mm 0;font-size:11pt}.qr{display:flex;justify-content:center;margin:4mm 0}
+@media print{.dica{display:none}}</style></head><body>
+<p class="dica" style="width:100%">Imprima (Ctrl+P). Cabem 4 placas por folha A4. Link: https://cardapio-ja-df.netlify.app/super-lanche/</p>
+<div class="placa"><h1>Super lanche</h1><p>Aponte a câmera e veja o cardápio</p><div class="qr" id="q0"></div><p><b>Peça pelo WhatsApp</b></p></div><div class="placa"><h1>Super lanche</h1><p>Aponte a câmera e veja o cardápio</p><div class="qr" id="q1"></div><p><b>Peça pelo WhatsApp</b></p></div><div class="placa"><h1>Super lanche</h1><p>Aponte a câmera e veja o cardápio</p><div class="qr" id="q2"></div><p><b>Peça pelo WhatsApp</b></p></div><div class="placa"><h1>Super lanche</h1><p>Aponte a câmera e veja o cardápio</p><div class="qr" id="q3"></div><p><b>Peça pelo WhatsApp</b></p></div>
+<script>for(let i=0;i<4;i++)new QRCode(document.getElementById("q"+i),{text:"https://cardapio-ja-df.netlify.app/super-lanche/",width:220,height:220});</script>
+</body></html>
